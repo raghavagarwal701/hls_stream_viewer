@@ -4,7 +4,7 @@ async function fetchScoreData(streamKey) {
   try {
     // console.log("hiiii");
     // console.log(streamKey);
-    await new Promise((resolve) => setTimeout(resolve, 20000)); //wating 30 sec
+    await new Promise((resolve) => setTimeout(resolve, 30000)); //wating 30 sec
     const response = await fetch(
       "https://beta.gully6.com/api/v0/cricket/match/" +
         streamKey +

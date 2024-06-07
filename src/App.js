@@ -48,10 +48,6 @@ function App() {
       player.el().appendChild(overlayImage);
       const videoElement = player.el().getElementsByTagName("video")[0];
       videoElement.style.transform = "rotate(-90deg)";
-      videoElement.style.top = "-32.8vh";
-      videoElement.style.left = "-30.85vw";
-      videoElement.style.height = "150vh";
-      videoElement.style.width = "140vw";
       // Handle fullscreen change
       player.on("fullscreenchange", function () {
         if (player.isFullscreen()) {
@@ -68,6 +64,10 @@ function App() {
           videoElement.style.width = "140vw";
         }
       });
+      videoElement.style.top = "-32.8vh";
+      videoElement.style.left = "-30.85vw";
+      videoElement.style.height = "150vh";
+      videoElement.style.width = "140vw";
       // Cleanup function to remove the overlay image when the component unmounts
       return () => {
         const overlayImages =
