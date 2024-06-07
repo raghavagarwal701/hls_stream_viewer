@@ -48,24 +48,24 @@ function App() {
       player.el().appendChild(overlayImage);
       const videoElement = player.el().getElementsByTagName("video")[0];
       videoElement.style.transform = "rotate(-90deg)";
-      videoElement.style.top = "-420px";
-      videoElement.style.left = "420px";
-      videoElement.style.height = "120rem";
-      videoElement.style.width = "67.5rem";
+      videoElement.style.top = "-32.8vh";
+      videoElement.style.left = "-30.85vw";
+      videoElement.style.height = "150vh";
+      videoElement.style.width = "140vw";
       // Handle fullscreen change
       player.on("fullscreenchange", function () {
         if (player.isFullscreen()) {
           overlayImage.style.position = "fixed";
-          videoElement.style.top = "-30rem";
-          videoElement.style.left = "28rem";
-          videoElement.style.height = "130rem";
-          videoElement.style.width = "73.125rem";
+          videoElement.style.top = "-37.5vh";
+          videoElement.style.left = "0vw";
+          videoElement.style.height = "175vh";
+          videoElement.style.width = "100vw";
         } else {
           overlayImage.style.position = "absolute";
-          videoElement.style.height = "120rem";
-          videoElement.style.width = "67.5rem";
-          videoElement.style.top = "-420px";
-          videoElement.style.left = "420px";
+          videoElement.style.top = "-32.8vh";
+          videoElement.style.left = "-30.85vw";
+          videoElement.style.height = "150vh";
+          videoElement.style.width = "140vw";
         }
       });
       // Cleanup function to remove the overlay image when the component unmounts
