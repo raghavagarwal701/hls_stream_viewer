@@ -30,16 +30,16 @@ const CreateScoreStrip = ({
 
         //adding team names
         ctx.fillStyle = "white";
-        ctx.font = "22px Arial";
-        ctx.fillText('Batting Team: '+batting_team_name, 50, 60);
-        ctx.fillText('Bowling Team: '+bowling_team_name, 720, 60);
+        ctx.font = "16px Arial";
+        ctx.fillText(batting_team_name, 200, 20);
+        ctx.fillText(bowling_team_name, 810, 20);
 
         //adding player detials
-        // ctx.font = "20px Arial";
-        // ctx.fillText(batter_one, 55, 50);
-        // ctx.fillText(batter_two, 55, 85);
-        // ctx.fillText(bowler, 800, 65);
-        // ctx.fillText(bowler_figure, 960, 65);
+        ctx.font = "20px Arial";
+        ctx.fillText(batter_one, 55, 50);
+        ctx.fillText(batter_two, 55, 85);
+        ctx.fillText(bowler, 800, 65);
+        ctx.fillText(bowler_figure, 960, 65);
 
         //adding score
         ctx.fillStyle = "gold";
