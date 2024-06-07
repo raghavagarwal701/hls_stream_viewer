@@ -1,38 +1,88 @@
-.App {
+/* App.css */
+.video-container {
   text-align: center;
+  margin: 0px;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.video-wrapper {
+  padding-top: 3rem;
+  position: relative;
+  display: list-item;
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* App.css */
+.video-js {
+  width: 120rem;
+  height: 67.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+video{
+  /* width: 200%; */
+  /* transform: rotate(-90deg); */
+}
+#live-video_html5_api{
+  width: 100%;
+  height: 100%;
+}
+
+#input{
+  width: 30%;
+  height: 2.5rem;
+}
+
+/* .video-player {
+  width: 100%;
+  height: 100%;
+} */
+.overlay-image {
+  position: absolute;
+  bottom: 7%; /* Position the overlay at the bottom */
+  left: 50%; /* Center the overlay horizontally */
+  transform: translateX(-50%); /* Center the overlay horizontally */
+  width: 90%; /* Adjust the size as needed */
+  height: auto; /* Adjust the size as needed */
+  pointer-events: none; /* Ensure the image doesn't block video controls */
+  z-index: 10; /* Ensure the image is above the video */
+}
+
+.vjs-fullscreen .overlay-image {
+  position: fixed;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+/* 
+.create-score-strip {
+  position: absolute;
+  top: 525px;
+  left: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  justify-content: flex-start; 
+  pointer-events: none; 
+} */
+/* 
+.create-score-strip canvas {
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0.1); 
+} */
+/* .overlay-image {
+  position: absolute;
+  top: 0px; 
+  left: 0px; 
+  width: 1200px; 
+  height: 700px; 
+  pointer-events: none; 
+}*/

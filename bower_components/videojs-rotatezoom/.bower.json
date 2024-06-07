@@ -1,0 +1,38 @@
+{
+  "name": "videojs-rotatezoom",
+  "homepage": "https://github.com/xbgmsharp/videojs-rotatezoom",
+  "description": "plugin that allows you to set the Zoom level and a rotation for video and poster with video.js",
+  "main": "src/videojs.zoomrotate.js",
+  "keywords": [
+    "videojs",
+    "video.js",
+    "rotatezoom",
+    "zoom",
+    "rotate",
+    "video"
+  ],
+  "authors": [
+    "xbgmsharp <https://github.com/xbgmsharp>"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "video.js": "^5.13.0"
+  },
+  "_release": "7b244d4ff1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "7b244d4ff19ed14904223e95fcb09832e5a5b52d"
+  },
+  "_source": "https://github.com/xbgmsharp/videojs-rotatezoom.git",
+  "_target": "*",
+  "_originalSource": "videojs-rotatezoom",
+  "_direct": true
+}
