@@ -4,9 +4,9 @@ async function fetchScoreData(streamKey) {
   try {
     // console.log("hiiii");
     // console.log(streamKey);
-    await new Promise((resolve) => setTimeout(resolve, 30000)); //wating 30 sec
+    // await new Promise((resolve) => setTimeout(resolve, 30000)); //wating 30 sec
     const response = await fetch(
-      "https://beta.gully6.com/api/v0/cricket/match/" +
+      "https://gully6.com/api/v0/cricket/match/" +
         streamKey +
         "?getTopPerformers=true"
     );
@@ -27,16 +27,18 @@ async function fetchScoreData(streamKey) {
       data.data.currScore.teamScore[batting_team_name].inningOver;
 
     //batter name and score
-    let batter_one = "Batter_one";
-    let batter_one_score = "Batter_one_score";
-    let batter_two = "Batter_two";
-    let batter_two_score = "Batter_two_score";
-    let batter_onstrike = 1;
+    // let batter_one = "Batter_one";
+    let batter_one = data.data.currScore.teamScore[batting_team_name].onPitch.striker;
+    let batter_one_score = data.data.currScore.teamScore[batting_team_name].onPitch.strikerScore;
+    let batter_two = data.data.currScore.teamScore[batting_team_name].onPitch.nonStriker;
+    let batter_two_score = data.data.currScore.teamScore[batting_team_name].onPitch.nonStrikerScore;
+    // let batter_onstrike = 1;
 
     //bowler detail
-    let bowler = "Bowler_name";
-    let bowler_figure = "0-0";
+    let bowler = data.data.currScore.teamScore[batting_team_name].onPitch.bowler;
+    let bowler_figure = data.data.currScore.teamScore[batting_team_name].onPitch.bowlerScore;
     //   console.log(batting_team_name);
+    await new Promise((resolve) => setTimeout(resolve, 20000));
     return {
       batting_team_name,
       bowling_team_name,
