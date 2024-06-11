@@ -38,7 +38,7 @@ async function fetchScoreData(streamKey) {
     let bowler = data.data.currScore.teamScore[batting_team_name].onPitch.bowler;
     let bowler_figure = data.data.currScore.teamScore[batting_team_name].onPitch.bowlerScore;
     //   console.log(batting_team_name);
-    await new Promise((resolve) => setTimeout(resolve, 20000));
+    await new Promise((resolve) => setTimeout(resolve, 15000));
     return {
       batting_team_name,
       bowling_team_name,
